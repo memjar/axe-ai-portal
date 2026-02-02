@@ -22,8 +22,8 @@ Local AI assistant with Claude-quality responses, designed for Canadians.
 
 ```bash
 # Clone repo
-git clone https://github.com/yourusername/axe-web.git
-cd axe-web
+git clone https://github.com/memjar/axe-ai-portal.git
+cd axe-ai-portal
 
 # Install dependencies
 npm install
@@ -40,7 +40,7 @@ Visit `http://localhost:3000`
 
 ## Deploy to Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/axe-web)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/memjar/axe-ai-portal)
 
 1. Click button above
 2. Connect GitHub repo
