@@ -1,0 +1,17 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        'axe-primary': '#1a73e8',
+        'axe-secondary': '#7c4dff',
+      }
+    },
+  },
+  plugins: [],
+}
