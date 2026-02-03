@@ -1,0 +1,311 @@
+/**
+ * Prometheus Font Family - Custom AXE Typography
+ * Matrix/Cyberpunk monospace typeface
+ * Copyright 2025 Axe Technology
+ */
+
+/* === PROMETHEUS 1 (Primary) === */
+
+@font-face {
+  font-family: 'Prometheus';
+  src: url('/fonts/Prometheus-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Prometheus';
+  src: url('/fonts/Prometheus-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Prometheus';
+  src: url('/fonts/Prometheus-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Prometheus';
+  src: url('/fonts/Prometheus-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* === PROMETHEUS 2 (Alternate) === */
+
+@font-face {
+  font-family: 'Prometheus2';
+  src: url('/fonts/Prometheus2-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Prometheus2';
+  src: url('/fonts/Prometheus2-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Prometheus2';
+  src: url('/fonts/Prometheus2-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Prometheus2';
+  src: url('/fonts/Prometheus2-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* === AXE Brand Typography === */
+
+:root {
+  --font-prometheus: 'Prometheus', 'Courier New', Courier, monospace;
+  --font-prometheus2: 'Prometheus2', 'Courier New', Courier, monospace;
+  --font-system: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* === Utility Classes === */
+
+.font-prometheus {
+  font-family: var(--font-prometheus);
+}
+
+.font-prometheus2 {
+  font-family: var(--font-prometheus2);
+}
+
+.font-mono {
+  font-family: var(--font-prometheus);
+}
+
+/* === Terminal UI Styles === */
+
+.terminal {
+  font-family: var(--font-prometheus);
+  background: #0d0d0d;
+  color: #00ff41; /* Matrix green */
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  line-height: 1.6;
+  font-size: 0.875rem;
+}
+
+.terminal-prompt {
+  color: #00ff41;
+  font-weight: 700;
+}
+
+.terminal-command {
+  color: #00d4ff; /* Cyan */
+}
+
+.terminal-output {
+  color: #8b949e; /* Gray */
+}
+
+.terminal-error {
+  color: #ff3366; /* Red */
+}
+
+.terminal-success {
+  color: #00ff41; /* Green */
+}
+
+.terminal-warning {
+  color: #ff6b35; /* Orange */
+}
+
+/* === Code Block Styles === */
+
+.code-block {
+  font-family: var(--font-prometheus);
+  background: #1a1a2e;
+  color: #eaeaea;
+  padding: 1rem;
+  border-left: 3px solid #00ff41;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+}
+
+.code-block .keyword {
+  color: #ff6b9d;
+}
+
+.code-block .string {
+  color: #a8ff60;
+}
+
+.code-block .number {
+  color: #ff9d00;
+}
+
+.code-block .comment {
+  color: #6b737c;
+  font-style: italic;
+}
+
+.code-block .function {
+  color: #00d4ff;
+}
+
+/* === Glow Effects === */
+
+.text-glow {
+  text-shadow: 0 0 5px currentColor, 0 0 10px currentColor;
+}
+
+.text-glow-intense {
+  text-shadow:
+    0 0 5px currentColor,
+    0 0 10px currentColor,
+    0 0 20px currentColor,
+    0 0 30px currentColor;
+}
+
+/* === Matrix Effect === */
+
+.matrix-text {
+  font-family: var(--font-prometheus);
+  color: #00ff41;
+  text-shadow: 0 0 10px #00ff41;
+  animation: matrix-flicker 2s infinite;
+}
+
+@keyframes matrix-flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+/* === AXE Branding === */
+
+.axe-brand {
+  font-family: var(--font-prometheus);
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #00ff41;
+  text-shadow: 0 0 10px #00ff41;
+}
+
+.axe-title {
+  font-family: var(--font-prometheus2);
+  font-weight: 700;
+  font-size: 2.5rem;
+  letter-spacing: 0.1em;
+  background: linear-gradient(135deg, #00ff41 0%, #00d4ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* === Thinking Block Style === */
+
+.thinking-block {
+  font-family: var(--font-prometheus);
+  background: linear-gradient(135deg, #1a1a2e 0%, #0d0d0d 100%);
+  border: 1px solid #00ff41;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.thinking-block::before {
+  content: '🧠 Extended Thinking';
+  display: block;
+  font-weight: 700;
+  color: #00ff41;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 5px #00ff41;
+}
+
+/* === Message Styles === */
+
+.message-user {
+  font-family: var(--font-system);
+}
+
+.message-assistant {
+  font-family: var(--font-system);
+}
+
+.message-code {
+  font-family: var(--font-prometheus);
+}
+
+/* === Input Styles === */
+
+input[type="text"],
+textarea {
+  font-family: var(--font-system);
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  outline: 2px solid #00ff41;
+  outline-offset: 2px;
+}
+
+/* === Button Styles === */
+
+.btn-primary {
+  font-family: var(--font-prometheus);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  background: linear-gradient(135deg, #00ff41 0%, #00d4ff 100%);
+  color: #0d0d0d;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(0, 255, 65, 0.4);
+}
+
+/* === Loading Animation === */
+
+.loading {
+  font-family: var(--font-prometheus);
+  color: #00ff41;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+/* === Responsive Typography === */
+
+@media (max-width: 768px) {
+  .terminal {
+    font-size: 0.75rem;
+    padding: 1rem;
+  }
+
+  .code-block {
+    font-size: 0.75rem;
+  }
+
+  .axe-title {
+    font-size: 1.5rem;
+  }
+}
