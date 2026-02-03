@@ -2,7 +2,7 @@ import './globals.css'
 
 export const metadata = {
   title: 'AXE - Canada\'s AI Assistant',
-  description: 'Local AI with Claude-quality responses',
+  description: 'Advanced local AI with extended reasoning, built for Canadians. PIPEDA compliant, bilingual, privacy-first.',
 }
 
 export default function RootLayout({

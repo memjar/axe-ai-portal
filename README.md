@@ -1,14 +1,15 @@
 # AXE - Canada's AI Assistant
 
-Local AI assistant with Claude-quality responses, designed for Canadians.
+Advanced local AI assistant with extended reasoning capabilities, built for Canadians.
 
 ## Features
 
-- 🧠 **Claude-Quality Responses** - Opus 4.5-level extended thinking
-- 🇨🇦 **Canadian Focus** - PIPEDA compliant, bilingual (EN/FR)
-- 💻 **Local Processing** - 100% private, $0 cost
-- 🚀 **Fast** - Optimized inference with vLLM
-- 🔓 **Open Source** - Verifiable and customizable
+- 🧠 **Advanced Reasoning** - 10K token extended thinking for complex problem solving
+- 🇨🇦 **Canadian AI Expert** - PIPEDA compliant, bilingual (EN/FR), Canadian law awareness
+- 💻 **100% Local & Private** - Your data never leaves your machine, $0 API costs
+- 🚀 **High Performance** - Optimized inference with vLLM on local hardware
+- 🔓 **Open Source** - Fully transparent and customizable
+- 🍁 **Canadian Enhancement Layer** - Provincial regulations, bilingual excellence, privacy-first
 
 ## Quick Start
 
