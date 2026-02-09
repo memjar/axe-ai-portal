@@ -18,3 +18,107 @@ pre,
 .font-mono {
   font-family: 'Prometheus', 'Courier New', Courier, monospace;
 }
+
+/* Cortana Consciousness Theme */
+.cortana-page {
+  --cortana-blue: #00d4ff;
+  --cortana-bg: #0a0a0a;
+  --cortana-card: #111111;
+  --cortana-border: #1a1a1a;
+  --cortana-text: #e0e0e0;
+  --cortana-muted: #666666;
+}
+
+/* Construct Indicator - Premium Animation */
+.construct-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.construct-icon {
+  filter: drop-shadow(0 0 6px rgba(34, 197, 94, 0.5));
+}
+
+/* Spinning arc animation */
+@keyframes constructSpin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.construct-spin {
+  transform-origin: center;
+  animation: constructSpin 2s linear infinite;
+}
+
+/* Core glow animation */
+@keyframes constructCore {
+  0%, 100% {
+    fill: rgba(34, 197, 94, 0.3);
+    filter: blur(0px);
+  }
+  50% {
+    fill: rgba(34, 197, 94, 0.6);
+    filter: blur(1px);
+  }
+}
+
+.construct-core {
+  fill: rgba(34, 197, 94, 0.4);
+  animation: constructCore 3s ease-in-out infinite;
+}
+
+/* Inner pulse animation */
+@keyframes constructPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 0.7;
+  }
+}
+
+.construct-pulse {
+  transform-origin: center;
+  animation: constructPulse 1.5s ease-in-out infinite;
+}
+
+/* Legacy pulse animation for live indicator */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.live-indicator {
+  animation: pulse 2s infinite;
+}
+
+/* Fade in animation for new thoughts */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Terminal cursor blink */
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.cursor-blink::after {
+  content: '|';
+  animation: blink 1s infinite;
+  color: var(--cortana-blue);
+}
