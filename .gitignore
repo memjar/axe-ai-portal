@@ -45,3 +45,4 @@ ENV/
 *.gguf
 *.safetensors
 models/
+.env*.local
